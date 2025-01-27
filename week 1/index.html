@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visual Studio Code - Code Editor</title>
-    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="Assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="home">
@@ -13,7 +13,7 @@
             <div class="navLeft">
                 <div class="navHeading">
                     <a class="navHeadTitle" href="/">
-                        <img src="Images/icon.png" alt="icon">
+                        <img src="Assets/icon.png" alt="icon">
                         <span>Visual Studio Code</span>
                     </a>
                 </div>
@@ -31,7 +31,7 @@
             </div>
             <div class="navRight">
                 <div class="colorModeButton">
-                    <img src="Images/theme-light.svg" alt="mode">
+                    <img src="Assets/theme-light.svg" alt="mode">
                 </div>
                 <div class="navSearch">
                     <input type="text" name="searchDocs" id="searchDocs" placeholder="Search Docs">
@@ -40,5 +40,84 @@
             </div>
         </nav>
     </header>
+    <main>
+        <section id="main">
+            <div class="mainTitle">
+                <h1>Your code editor. Redefined with AI.</h1>
+            </div>
+            <div class="mainClickable">
+                <div class="mainButtons">
+                    <button class="mainDownload">
+                        Download For Windows
+                    </button>
+                    <button class="mainCopilot">
+                        Get Copilot Free
+                    </button>
+                </div>
+                <div class="mainLinks">
+                    <a href="/">Web</a>, <a href="/">Insider's Edition</a>, or <a href="/">Other Platforms</a>
+                </div>
+            </div>
+            <div class="mainVideo" role="img">
+                <video id="video1" width="1008" height="639" preload="auto" playsinline muted autoplay>
+                    <source src="Assets/hero-dark-lg.mp4" type="video/mp4">
+                    <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
+                    <!-- Your browser does not support HTML video. -->
+                  </video>
+                  <img src="Assets/hero-background.webp" alt="bg">
+            </div>
+            <div class="videoControl">
+                <button onclick="playPause()">Replay</button>
+            </div>
+        </section>
+        <section id="second">
+            <div class="secondSectionCards">
+                <div class="sectionCard">
+                    <h2>Choose the model that works for you</h2>
+                    <p>Pick the model that works best for your project and team, including GPT 4o and Claude Sonnet.</p>
+                    <div>
+                        <img src="Assets/choose-model-dark.webp" alt="choose-model-dark">
+                    </div>
+                </div>
+                <div class="sectionCard">
+                    <h2>An expert on your codebase</h2>
+                    <p>Copilot locally indexes your codebase to understand what’s relevant and supplements that context to interactions with Copilot.</p>
+                    <div>
+                        <img src="Assets/multi-file-dark.webp" alt="multi-file-dark">
+                    </div>
+                </div>
+                <div class="sectionCard">
+                    <h2>Personalized to your needs</h2>
+                    <p>Copilot works the way you do. Customize Copilot's prompts with details about your team's workflows, tools, and projects.</p>
+                    <div>
+                        <img src="Assets/instructions-dark.webp" alt="instructions-dark">
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner">
+                <div class="secondSectionBanner">
+                    <div>
+                        <h2>Activate Copilot Free in Visual Studio Code</h2>
+                    </div>
+                    <div>
+                        <p>No trial. No credit card required. Just your GitHub account.</p>
+                        <a class="link-button secondary" href="https://aka.ms/vscode-activatecopilotfree" rel="noopener">Get
+                            Copilot Free</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        var myVideo = document.getElementById("video1"); 
+        function playPause() { 
+        if (myVideo.paused) 
+            myVideo.play(); 
+        else 
+            myVideo.pause(); 
+        }
+    </script>
 </body>
 </html>
