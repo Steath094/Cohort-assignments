@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="shortcut icon" href="Assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="home">
     <header>
         <nav id="navbar">
@@ -63,8 +65,8 @@
                     <source src="Assets/hero-dark-lg.mp4" type="video/mp4">
                     <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
                     <!-- Your browser does not support HTML video. -->
-                  </video>
-                  <img src="Assets/hero-background.webp" alt="bg">
+                </video>
+                <img src="Assets/hero-background.webp" alt="bg">
             </div>
             <div class="videoControl">
                 <button onclick="playPause()">Replay</button>
@@ -81,14 +83,16 @@
                 </div>
                 <div class="sectionCard">
                     <h2>An expert on your codebase</h2>
-                    <p>Copilot locally indexes your codebase to understand what’s relevant and supplements that context to interactions with Copilot.</p>
+                    <p>Copilot locally indexes your codebase to understand what’s relevant and supplements that context
+                        to interactions with Copilot.</p>
                     <div>
                         <img src="Assets/multi-file-dark.webp" alt="multi-file-dark">
                     </div>
                 </div>
                 <div class="sectionCard">
                     <h2>Personalized to your needs</h2>
-                    <p>Copilot works the way you do. Customize Copilot's prompts with details about your team's workflows, tools, and projects.</p>
+                    <p>Copilot works the way you do. Customize Copilot's prompts with details about your team's
+                        workflows, tools, and projects.</p>
                     <div>
                         <img src="Assets/instructions-dark.webp" alt="instructions-dark">
                     </div>
@@ -102,22 +106,347 @@
                     </div>
                     <div>
                         <p>No trial. No credit card required. Just your GitHub account.</p>
-                        <a class="link-button secondary" href="https://aka.ms/vscode-activatecopilotfree" rel="noopener">Get
+                        <a class="link-button secondary" href="https://aka.ms/vscode-activatecopilotfree"
+                            rel="noopener">Get
                             Copilot Free</a>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
+        <section class="thirdContent">
+            <div class="col-sm-6 col-lg-4">
+                <div class="value-prop">
+                    <h2>Create faster</h2>
+                    <p>Describe what you want to build in natural language, and Copilot Edits takes care of the rest.
+                        Copilot Edits makes changes across files in your codebase with a UI designed for rapid
+                        iteration. It's the fastest way to add new functionality to your apps.
+                    </p>
+                    <a href="https://code.visualstudio.com/docs/copilot/copilot-edits" rel="noopener">Build with Copilot
+                        Edits</a>
+                </div>
+                <div class="value-prop">
+                    <p>Copilot Chat is an expert on your codebase, helping you to answer questions, explain code, and
+                        propose fixes. Chat is available wherever you need it - either as a dedicated sidebar panel or
+                        directly from within your code so you can stay in context.</p>
+                    <a href="https://code.visualstudio.com/docs/copilot/getting-started-chat" rel="noopener">Get answers
+                        from Copilot Chat</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-8 imgThird">
+                <img src="Assets/swimlane-chat-dark.webp" class="swimlane-image dark" loading="lazy"
+                    alt="VS Code window showing a code editor with projects.tsx open, alongside a Copilot Edits panel. The chat discusses modifications to make each project a link and add dynamic pages. Two files, projects.tsx and [slug].tsx, are in the working set, with GitHub Copilot suggesting edits.">
+            </div>
 
+        </section>
+        <section class="thirdContent">
+            <div class="col-sm-6 col-lg-4">
+                <div class="value-prop">
+                    <h2>Code efficiently</h2>
+                    <p>Copilot is your AI pair programmer infused directly into the editor. Just start typing, and
+                        Copilot will complete your thought by offering a completion on the current line or (sometimes) a
+                        whole new block of code. Just like a coworker, you have the flexibility to accept all, some, or
+                        none of Copilot's suggestions. Copilot supports a broad range of languages and frameworks.
+                    </p>
+                    <a href="https://code.visualstudio.com/docs/copilot/ai-powered-suggestions" rel="noopener">Pair
+                        program with Copilot</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-8 imgThird">
+                <img src="Assets/completions-dark.webp" class="swimlane-image dark" loading="lazy"
+                    alt="VS Code window showing a code editor with projects.tsx open, alongside a Copilot Edits panel. The chat discusses modifications to make each project a link and add dynamic pages. Two files, projects.tsx and [slug].tsx, are in the working set, with GitHub Copilot suggesting edits.">
+            </div>
+
+        </section>
+        <section class="thirdContent">
+            <div class="col-sm-6 col-lg-4">
+                <div class="value-prop">
+                    <h2>Code with Extensions</h2>
+                    <p>Extensions let you customize VS Code and Copilot with AI-powered features grounded securely in
+                        your
+                        team's data and workflows. Grab one from the gallery and add it to chat like @azure, or <a
+                            href="https://code.visualstudio.com/docs/copilot/copilot-extensibility-overview"
+                            rel="noopener">build your own Copilot extension</a> to power your team's unique scenarios.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-8">
+                <div class="extensions-grid-container">
+                    <div class="extensions-grid">
+                        <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python" target="_blank"
+                            rel="noopener" class="extension-tile">
+                            <img src="https://code.visualstudio.com/assets/images/python-extension.png" loading="lazy"
+                                alt="Python extension icon">
+                            <div class="extension-tile-details">
+                                <h3>Python</h3>
+                                <p>Adds rich language support for Python</p>
+                            </div>
+                        </a>
+                        <a href="https://marketplace.visualstudio.com/items?itemName=Stripe.vscode-stripe"
+                            target="_blank" rel="noopener" class="extension-tile">
+                            <img src="https://code.visualstudio.com/assets/images/stripe-extension.png" loading="lazy"
+                                alt="Stripe extension icon">
+                            <div class="extension-tile-details">
+                                <h3>Stripe</h3>
+                                <p>Build, test, and use Stripe inside your editor</p>
+                            </div>
+                        </a>
+                        <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools" target="_blank"
+                            rel="noopener" class="extension-tile">
+                            <img src="https://code.visualstudio.com/assets/images/c-extension.png" loading="lazy"
+                                alt="C/C extension icon">
+                            <div class="extension-tile-details">
+                                <h3>C/C++</h3>
+                                <p>Adds rich language support for C/C++</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="extensions-grid">
+                        <a href="https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter" target="_blank"
+                            rel="noopener" class="extension-tile">
+                            <img src="https://code.visualstudio.com/assets/images/jupyter-extension.png" loading="lazy"
+                                alt="Jupyter extension icon">
+                            <div class="extension-tile-details">
+                                <h3>Jupyter</h3>
+                                <p>Language support for Jupyter Notebooks</p>
+                            </div>
+                        </a>
+                        <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens" target="_blank"
+                            rel="noopener" class="extension-tile">
+                            <img src="https://code.visualstudio.com/assets/images/gitlens-extension.png" loading="lazy"
+                                alt="GitLens extension icon">
+                            <div class="extension-tile-details">
+                                <h3>GitLens</h3>
+                                <p>Supercharge your Git experience</p>
+                            </div>
+                        </a>
+                        <a href="https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit"
+                            target="_blank" rel="noopener" class="extension-tile">
+                            <img src="https://code.visualstudio.com/assets/images/cs-dev-kit-extension.png"
+                                loading="lazy" alt="C# Dev Kit extension icon">
+                            <div class="extension-tile-details">
+                                <h3>C# Dev Kit</h3>
+                                <p>Powerful tools for your C# environment</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="extensions-grid">
+                        <a href="https://marketplace.visualstudio.com/items?itemName=mongodb.mongodb-vscode"
+                            target="_blank" rel="noopener" class="extension-tile">
+                            <img src="https://code.visualstudio.com/assets/images/mongodb-extension.png" loading="lazy"
+                                alt="MongoDB extension icon">
+                            <div class="extension-tile-details">
+                                <h3>MongoDB</h3>
+                                <p>Extension for the @MongoDB agent</p>
+                            </div>
+                        </a>
+                        <a href="https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azure-github-copilot"
+                            target="_blank" rel="noopener" class="extension-tile">
+                            <img src="https://code.visualstudio.com/assets/images/azure.png" loading="lazy"
+                                alt="GitHub Copilot for Azure extension icon">
+                            <div class="extension-tile-details">
+                                <h3>GitHub Copilot for Azure</h3>
+                                <p>Streamline the process of developing for Azure</p>
+                            </div>
+                        </a>
+                        <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack"
+                            target="_blank" rel="noopener" class="extension-tile">
+                            <img src="https://code.visualstudio.com/assets/images/remote-extension.png" loading="lazy"
+                                alt="Remote Development extension icon">
+                            <div class="extension-tile-details">
+                                <h3>Remote Development</h3>
+                                <p>Open folders in a container on a remote machine</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="extensions-grid-caption">
+                    <p>View 60k+ extensions in the <a href="https://marketplace.visualstudio.com/vscode" rel="noopener"
+                            target="_blank">Extension Marketplace</a></p>
+                </div>
+            </div>
+
+        </section>
+        <section class="thirdContent">
+            <div class="col-sm-6 col-lg-4">
+                <div class="value-prop">
+                    <h2>Code in any language</h2>
+                    <p>VS Code supports almost every major programming language. Several ship in the box, like
+                        JavaScript, TypeScript, CSS, and HTML, but extensions for others can be found in the VS Code
+                        Marketplace.
+                    </p>
+                </div>
+            </div>
+            <div class="languages col-sm-6 col-lg-8">
+                <div><img src="Assets/language-js.png" alt="JavaScript icon"><code>JavaScript</code></div>
+                <div><img src="Assets/language-ts.png" alt="TypeScript icon"><code>TypeScript</code></div>
+                <div><img src="Assets/language-python.png" alt="Python icon"><code>Python</code></div>
+                <div><img src="Assets/language-cs.png" alt="C# icon"><code>C#</code></div>
+                <div><img src="Assets/language-cpp.png" alt="C++ icon"><code>C++</code></div>
+                <div><img src="Assets/language-html.png" alt="HTML icon"><code>HTML</code></div>
+                <div><img src="Assets/language-java.png" alt="Java icon"><code>Java</code></div>
+                <div><img src="Assets/language-json.png" alt="JSON icon"><code>JSON</code></div>
+                <div><img src="Assets/language-php.png" alt="PHP icon"><code>PHP</code></div>
+                <div><img src="Assets/language-markdown.png" alt="Markdown icon"><code>Markdown</code></div>
+                <div><img src="Assets/language-powershell.png" alt="Powershell icon"><code>Powershell</code></div>
+                <div><img src="Assets/language-yaml.png" alt="YAML icon"><code>YAML</code></div>
+            </div>
+
+        </section>
+        <section class="thirdContent">
+            <div class="col-sm-6 col-lg-4">
+                <div class="value-prop">
+                    <h2>Fully customizable</h2>
+                    <p>Customize your VS Code UI and layout so that it fits your coding style.
+                    </p>
+                </div>
+                <div class="value-prop">
+                    <p><a href="https://code.visualstudio.com/docs/getstarted/themes" rel="noopener">Color themes</a>
+                        let you modify the colors in VS Code's user interface to suit your preferences and work
+                        environment.</p>
+                </div>
+                <div class="value-prop">
+                    <p><a href="https://code.visualstudio.com/docs/getstarted/settings#_settings-sync" rel="noopener"
+                            class="value-prop-bold">Settings Sync</a> enables you to share your user settings across
+                        your VS Code instances with the Settings Sync feature.</p>
+                </div>
+                <div class="value-prop">
+                    <p><a href="https://code.visualstudio.com/docs/editor/profiles" rel="noopener"
+                            class="value-prop-bold">Profiles</a> let you create sets of customizations and quickly
+                        switch between them or share them with others.</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-8 imgThird">
+                <img src="https://code.visualstudio.com/assets/home/swimlane-anywhere.png" class="swimlane-image dark"
+                    loading="lazy"
+                    alt="VS Code window showing a code editor with projects.tsx open, alongside a Copilot Edits panel. The chat discusses modifications to make each project a link and add dynamic pages. Two files, projects.tsx and [slug].tsx, are in the working set, with GitHub Copilot suggesting edits.">
+            </div>
+
+        </section>
+        <section class="thirdContent">
+            <div class="col-sm-6 col-lg-4">
+                <div class="value-prop">
+                    <h2>Code anywhere</h2>
+                    <p>Code wherever you're most productive, whether you're connected to the cloud, a remote repository,
+                        or in the browser with VS Code for the Web (vscode.dev).
+                    </p>
+                </div>
+                <div class="value-prop">
+                    <p><a href="https://code.visualstudio.com/docs/sourcecontrol/overview" rel="noopener">Built-in
+                            Source Control</a> empowers you with Git support out-of-the-box. Many other source control
+                        providers are available through extensions.</p>
+                </div>
+                <div class="value-prop">
+                    <p><a href="https://code.visualstudio.com/docs/remote/codespaces" rel="noopener"
+                            class="value-prop-bold">GitHub Codespaces</a> provides cloud-powered development
+                        environments for any activity - whether it's a long-term project, or a short-term task like
+                        reviewing a pull request.</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-8 imgThird">
+                <img src="https://code.visualstudio.com/assets/home/swimlane-anywhere.png" class="swimlane-image dark"
+                    loading="lazy"
+                    alt="VS Code window showing a code editor with projects.tsx open, alongside a Copilot Edits panel. The chat discusses modifications to make each project a link and add dynamic pages. Two files, projects.tsx and [slug].tsx, are in the working set, with GitHub Copilot suggesting edits.">
+            </div>
+
+        </section>
+        <section class="rich-features row">
+            <div class="secondary-tagline col-sm-12">
+                <h2>Code with rich features</h2>
+                <p>There's a lot more to an editor. Whether it's using built-in features or rich extensions, there's
+                    something for everyone.</p>
+            </div>
+            <div class="feature-grid col-sm-12">
+                <a href="https://code.visualstudio.com/docs/terminal/basics" class="feature-card">
+                    <img src="Assets/codicon-terminal.svg" alt="terminal icon">
+                    <h3 class="feature-card-title">Integrated terminal</h3>
+                    <p>Use your favorite shell whether it's zsh, pwsh, or git bash, all inside the editor.
+                    </p>
+                </a>
+                <a href="https://code.visualstudio.com/docs/editor/debugging" class="feature-card">
+                    <img src="Assets/codicon-debug.svg" alt="debug icon">
+                    <h3 class="feature-card-title">Run code</h3>
+                    <p>Run and debug your code without leaving your editor.</p>
+                </a>
+                <a href="https://code.visualstudio.com/docs/sourcecontrol/overview" class="feature-card">
+                    <img src="Assets/codicon-version-control.svg" alt="branching icon">
+                    <h3 class="feature-card-title">Version control</h3>
+                    <p>Built-in support for git and many other source control providers.</p>
+                </a>
+                <a href="https://code.visualstudio.com/docs/editor/tasks" class="feature-card">
+                    <img src="Assets/codicon-build-tasks.svg" alt="tools icon">
+                    <h3 class="feature-card-title">Build tasks</h3>
+                    <p>Run tools and analyze their results from within VS Code.</p>
+                </a>
+                <a href="https://code.visualstudio.com/updates/v1_66#_local-history" class="feature-card">
+                    <img src="Assets/codicon-local-history.svg" alt="history icon">
+                    <h3 class="feature-card-title">Local history</h3>
+                    <p>Never lose your changes with automatically tracked local history.</p>
+                </a>
+                <a href="https://code.visualstudio.com/docs/getstarted/themes" class="feature-card">
+                    <img src="Assets/codicon-themes.svg" alt="palette icon">
+                    <h3 class="feature-card-title">Themes</h3>
+                    <p>Your theme is an extension of your personality. Add some flair to your editor and add your touch.</p>
+                </a>
+                <a href="https://code.visualstudio.com/docs/editor/accessibility" class="feature-card">
+                    <img src="Assets/codicon-accessibility.svg" alt="keyboard icon">
+                    <h3 class="feature-card-title">Accessibility</h3>
+                    <p>Optimized experience for screen readers, high contrast themes, and keyboard-only navigation.</p>
+                </a>
+                <a href="https://code.visualstudio.com/docs/editor/vscode-web" class="feature-card">
+                    <img src="Assets/codicon-web.svg" alt="globe icon">
+                    <h3 class="feature-card-title">Web support</h3>
+                    <p>Whether you are on your phone, tablet, or desktop, you can access your code from anywhere.</p>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer role="contentinfo" class="container">
+		<div class="footer-container">
+			<div class="footer-row">
+				<div class="footer-social">
+					<ul class="links">
+						<li>
+							<a href="https://go.microsoft.com/fwlink/?LinkID=533687"><img src="Assets/x-icon.svg" class="x-icon" alt="Follow us on X"></a>
+						</li>
+						<li>
+							<a href="https://github.com/microsoft/vscode"><img src="Assets/github-icon.svg" alt="VS Code on Github"></a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/@code"><img src="Assets/youtube-icon.svg" alt="VS Code on YouTube"></a>
+						</li>
+						<script>
+							function manageConsent() {
+								if (siteConsent && siteConsent.isConsentRequired) {
+									siteConsent.manageConsent();
+								}
+							}
+						</script>
+					</ul>
+					<a id="footer-microsoft-link" class="microsoft-logo" href="https://www.microsoft.com">
+						<img src="Assets/microsoft.svg" alt="Microsoft homepage">
+					</a>
+				</div>
+			</div>
+			<div class="footer-row">
+				<ul class="links">
+					<li><a id="footer-support-link" href="https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=d66407ed-3967-b000-4cfb-2c318cad363d" target="_blank" rel="noopener">Support</a></li>
+					<li><a id="footer-privacy-link" href="https://go.microsoft.com/fwlink/?LinkId=521839" target="_blank" rel="noopener">Privacy</a></li>
+					<li style="display: none;"><a id="footer-cookie-link" style="cursor: pointer;" onclick="manageConsent()" target="_blank" rel="noopener">Manage Cookies</a></li>
+					<li><a id="footer-terms-link" href="https://www.microsoft.com/legal/terms-of-use" target="_blank" rel="noopener">Terms of Use</a></li>
+					<li><a id="footer-license-link" href="/License" target="_blank" rel="noopener">License</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
     <script>
-        var myVideo = document.getElementById("video1"); 
-        function playPause() { 
-        if (myVideo.paused) 
-            myVideo.play(); 
-        else 
-            myVideo.pause(); 
+        var myVideo = document.getElementById("video1");
+        function playPause() {
+            if (myVideo.paused)
+                myVideo.play();
+            else
+                myVideo.pause();
         }
     </script>
 </body>
+
 </html>
