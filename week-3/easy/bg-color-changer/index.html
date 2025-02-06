@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bg- changer</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        /* background: aqua; */
+    }
+    .mainBg{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+    }
+    .colors{
+        position: absolute;
+        bottom: 20px;
+        text-align: center;
+        /* width: 70%; */
+        background: white;
+        padding: 10px;
+        border-radius: 24px;
+    }
+    .colorlist{
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        text-decoration: none;
+        list-style: none;
+        background: white;
+
+
+    }
+    .color{
+        text-decoration: none;
+        border-radius: 16px;
+        padding: 2px 5px ;
+        color: wheat;
+    }
+
+</style>
+<body>
+    <div class="mainBg">
+        <div class="colors">
+            <ul class="colorlist">
+                <li class="color">Red</li>
+                <li class="color">Blue</li>
+                <li class="color">Black</li>
+                <li class="color">Aqua</li>
+                <li class="color">Green</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        const list = document.querySelectorAll('.color')
+        list.forEach(item=>{
+            let color = item.innerText;
+            item.style.backgroundColor=color;
+            item.addEventListener('click',()=>{
+                console.log("clicking");
+                document.getElementsByClassName('mainBg')[0].style.backgroundColor=color;
+            })
+        })
+    </script>
+</body>
+</html>
