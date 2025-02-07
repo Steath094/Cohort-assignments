@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="formBuilder">
+            <div class="heading">
+                Form Builder
+            </div>
+            <div class="form">
+                <div>
+                    <label for="type">Select Field Type: </label>
+                <select name="type" id="type">
+                    <option value="text">Text Input</option>
+                    <option value="checkbox">Check Box</option>
+                    <option value="radio">Radio</option>
+                </select>
+                </div>
+                <div>
+                    <label for="label">Enter Field Label: </label>
+                    <input type="text" name="label" id="label" placeholder="Enter Field Label">
+                </div>
+                <button onclick="add()" class="addButton">Add Field</button>
+            </div>
+        </div>
+        <div class="formPreview">
+            <div class="heading">
+                Form Preview
+            </div>
+            <div class="preview">
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        function add(){
+            const body = document.querySelector('.preview')
+            const type = document.querySelector('#type').value;
+            const label = document.querySelector('#label').value
+            if (label !== '') {
+                body.innerHTML+=   `<label for="label">${label}</label>`
+                
+            }
+            body.innerHTML+= `<input type="${type}" name="" id="" >`
+        }
+    </script>
+</body>
+</html>

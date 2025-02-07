@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.main{
+    background-color: #dfe3ee;
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+    
+}
+.heading{
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+
+}
+.formBuilder{
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 12px;
+    margin-top: 20px;
+    width: 90%;
+}
+.form{
+    display: flex;
+    gap: 20px;
+    font-size: 1.6rem;
+    /* justify-content: space-around; */
+}
+.formPreview{
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 12px;
+    margin-top: 20px;
+    width: 90%;
+}
+.addButton{
+    border-radius: 12px;
+    background: #3b5998;
+    color: #ffffff;
+    font-weight: bolder;
+    padding: 10px;
+}
+.preview {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    gap: 30px;
+    padding: 30px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+    width: 80%;
+    margin: auto;
+  }
+  
+  .preview label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .preview input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .preview input[type="text"]:focus {
+    border-color: #007bff;
+  }
+  
+  .preview input[type="checkbox"],
+  .preview input[type="radio"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #007bff;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .preview input[type="radio"] {
+    border-radius: 50%;
+  }
+  
+  .preview input[type="checkbox"]:checked::after,
+  .preview input[type="radio"]:checked::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #007bff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+  
