@@ -16,174 +16,54 @@
             <input type="text" placeholder="Todo Title" required>
             <input type="text" placeholder="Description" required>
             <select required>
-                <option value="Low">Low</option>
+                <option value="Low">Easy</option>
                 <option value="Medium">Medium</option>
                 <option value="High">Urgent</option>
             </select>
         </form>
     </div>
     <div class="main">
-        <div class="todoContainer">
+        <div class="todoContainer fullWidth">
             <div class="heading">
                 <span>To Do</span><span class="material-symbols-outlined">
                     sort
                     </span>
             </div>
             
-            <div class="todoslist">
-                <div class="todo">
-                    <div class="title">
-                        Tdod
-                    </div>
-                    <div class="description">
-                        <p>Lorem ipsum dolor sit </p>
-                    </div>
-                    <div class="utils">
-                        <div class="left">
-                            <div class="type">Medium</div>
-                            <div class="time">13:50:40</div>
-                        </div>
-                        <div class="right">12 hrs ago</div>
-                    </div>
-                </div>
-                <div class="todo">
-                    <div class="title">
-                        Tdod
-                    </div>
-                    <div class="description">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt consequuntur harum quam cupiditate!</p>
-                    </div>
-                    <div class="utils">
-                        <div class="left">
-                            <div class="type">Medium</div>
-                            <div class="time">13:50:40</div>
-                        </div>
-                        <div class="right">12 hrs ago</div>
-                    </div>
-                </div>
+            <div class="todosList">
             </div>
             <div>
                 <button onclick="addTask()" class="addButton"><span>Add New</span><span>+</span></button>
             </div>
         </div>
-        <div class="inProgress">
+        <div class="inProgress fullWidth">
             <div class="heading">
                 <span>In Progress</span>
                 <span class="material-symbols-outlined">
                     sort
                     </span>
             </div>
-            <div class="todoslist">
-                <div class="todo">
-                    <div class="title">
-                        Tdod
-                    </div>
-                    <div class="description">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt consequuntur harum quam cupiditate!</p>
-                    </div>
-                    <div class="utils">
-                        <div class="left">
-                            <div class="type">Medium</div>
-                            <div class="time">13:50:40</div>
-                        </div>
-                        <div class="right">12 hrs ago</div>
-                    </div>
-                </div>
-                <div class="todo">
-                    <div class="title">
-                        Tdod
-                    </div>
-                    <div class="description">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt consequuntur harum quam cupiditate!</p>
-                    </div>
-                    <div class="utils">
-                        <div class="left">
-                            <div class="type">Medium</div>
-                            <div class="time">13:50:40</div>
-                        </div>
-                        <div class="right">12 hrs ago</div>
-                    </div>
-                </div>
+            <div class="inProgressList">
             </div>
         </div>
-        <div class="underReview">
+        <div class="underReview fullWidth" >
             <div class="heading">
                 <span>Under Review</span>
                 <span class="material-symbols-outlined">
                     sort
-                    </span>
+                    </span >
             </div>
-            <div class="todoslist">
-                <div class="todo">
-                    <div class="title">
-                        Tdod
-                    </div>
-                    <div class="description">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt consequuntur harum quam cupiditate!</p>
-                    </div>
-                    <div class="utils">
-                        <div class="left">
-                            <div class="type">Medium</div>
-                            <div class="time">13:50:40</div>
-                        </div>
-                        <div class="right">12 hrs ago</div>
-                    </div>
-                </div>
-                <div class="todo">
-                    <div class="title">
-                        Tdod
-                    </div>
-                    <div class="description">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt consequuntur harum quam cupiditate!</p>
-                    </div>
-                    <div class="utils">
-                        <div class="left">
-                            <div class="type">Medium</div>
-                            <div class="time">13:50:40</div>
-                        </div>
-                        <div class="right">12 hrs ago</div>
-                    </div>
-                </div>
+            <div class="underReviewList">
             </div>
         </div>
-        <div class="finished">
+        <div class="finished fullWidth">
             <div class="heading">
                 <span>Finished</span>
                 <span class="material-symbols-outlined">
                     sort
                     </span>
             </div>
-            <div class="todoslist">
-                <div class="todo">
-                    <div class="title">
-                        Tdod
-                    </div>
-                    <div class="description">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt consequuntur harum quam cupiditate!</p>
-                    </div>
-                    <div class="utils">
-                        <div class="left">
-                            <div class="type">Medium</div>
-                            <div class="time">13:50:40</div>
-                        </div>
-                        <div class="right">12 hrs ago</div>
-                    </div>
-                </div>
-                <div class="todo">
-                    <div class="title">
-                        Tdod
-                    </div>
-                    <div class="description">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt consequuntur harum quam cupiditate!</p>
-                    </div>
-                    <div class="utils">
-                        <div class="left">
-                            <div class="type">Medium</div>
-                            <div class="time">13:50:40</div>
-                        </div>
-                        <div class="right">12 hrs ago</div>
-                    </div>
-                </div>
+            <div class="finishedList">
             </div>
         </div>
     </div>

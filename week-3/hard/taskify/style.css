@@ -25,10 +25,10 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.todoslist{
+.todosList ,.inProgressList,.underReviewList,.finishedList{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 8px;
 }
 .todo{
     background-color: #f6f6f6;
@@ -38,11 +38,30 @@ body{
     border-radius: 24px;
     font-family: 'Roboto';
 }
+
+/* //drag and drop css  */
+.dragging{
+    opacity: 0.5;
+    background-color: red;
+}
+.drag-over {
+    border-top: 2px solid #007bff;
+  }
+.todo.over {
+    border: 3px dotted #666;
+  }
+
+.fullWidth{
+    width: 100%;
+}
 .title{
     font-weight: bold;
     font-size: 1.4rem;
 }
-.description ,.time, .right{
+.description .time .right{
+    color: gray;
+}
+.colorGrey{
     color: gray;
 }
 .utils{
