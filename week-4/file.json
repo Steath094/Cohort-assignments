@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "task": "Buy groceries",
+    "completed": false
+  },
+  {
+    "id": 2,
+    "task": "Finish project report",
+    "completed": false,
+    "isCompleted": true
+  },
+  {
+    "id": 3,
+    "task": "Call plumber",
+    "completed": true
+  },
+  {
+    "id": 1,
+    "task": "hi",
+    "completed": true
+  }
+]
