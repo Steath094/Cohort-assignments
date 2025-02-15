@@ -1,33 +1,102 @@
 const mongoose = require('mongoose');
-
+const bcrypt = require('bcrypt')
+const jwt = require("jsonwebtoken")
 // Connect to MongoDB
-const connectDB =async () =>{
+const connectDB = async () => {
     try {
-        const connectionInstance = await mongoose.connect(`${process.env.MONGODBURI}/todo`)
+        const connectionInstance = await mongoose.connect(`${process.env.MONGODBURI}/todo`);
         console.log(`\nMongoDB connected !! DB HOST: ${connectionInstance.connection.host}`);
     } catch (error) {
-        console.log("MongoDB connection Failed ",error);
+        console.log("MongoDB connection Failed ", error);
         process.exit(1);
     }
+};
+
+// Define schemas
+const UserSchema = new mongoose.Schema(
+    {
+        userName: {
+            type: String,
+            required: true,
+            unique: true,
+            lowercase: true,
+            trim: true, 
+            index: true
+        },
+        email: {
+            type: String,
+            required: true,
+            unique: true,
+            lowercase: true, // Corrected typo
+            trim: true, 
+        },
+        fullName: {
+            type: String,
+            required: true,
+            trim: true, 
+            index: true
+        },
+        password: {
+            type: String,
+            required: [true, 'Password is required']
+        }
+    },
+    {
+        timestamps: true
+    }
+);
+UserSchema.pre("save", async function (next) {
+    if(!this.isModified("password")) return next();
+
+    this.password = await bcrypt.hash(this.password, 10)
+    next()
+})
+
+UserSchema.methods.isPasswordCorrect = async function(password){
+    return await bcrypt.compare(password, this.password)
 }
 
-export default connectDB
-// Define schemas
-
-const UserSchema = new mongoose.Schema({
-    // Schema definition here
-});
-
+UserSchema.methods.generateAccessToken = function(){
+    return jwt.sign(
+        {
+            _id: this._id,
+            email: this.email,
+            username: this.username,
+            fullName: this.fullName
+        },
+        process.env.ACCESS_TOKEN_SECRET,
+        {
+            expiresIn: process.env.ACCESS_TOKEN_EXPIRY
+        }
+    )
+}
+UserSchema.methods.generateRefreshToken = function(){
+    return jwt.sign(
+        {
+            _id: this._id,
+            
+        },
+        process.env.REFRESH_TOKEN_SECRET,
+        {
+            expiresIn: process.env.REFRESH_TOKEN_EXPIRY
+        }
+    )
+}
 const TodoSchema = new mongoose.Schema(
-    // Schema definition here
     {
-        name: {
+        title: {
             type: String,
             required: true,
         },
-        isCompleted:{
-            type: Boolean,
-            default: false,
+        description: {
+            type: String,
+        },
+        category: {
+            type: String,
+        },
+        owner: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "User"
         }
     },
     {
@@ -40,5 +109,6 @@ const Todo = mongoose.model('Todo', TodoSchema);
 
 module.exports = {
     User,
-    Todo
-}
+    Todo,
+    connectDB
+};
