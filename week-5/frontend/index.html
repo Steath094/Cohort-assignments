@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskify</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=sort" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="head">
+        Taskify
+    </div>
+    <div class="form">
+        <form class="todo-form">
+            <input type="text" placeholder="Todo Title" required>
+            <input type="text" placeholder="Description" required>
+            <select required>
+                <option value="Easy">Easy</option>
+                <option value="Medium">Medium</option>
+                <option value="Urgent">Urgent</option>
+            </select>
+        </form>
+    </div>
+    <div class="main">
+        <div class="todoContainer fullWidth">
+            <div class="heading">
+                <span>To Do</span><span class="material-symbols-outlined">
+                    sort
+                    </span>
+            </div>
+            
+            <div class="todoList">
+            </div>
+            <div>
+                <button onclick="addTask()" class="addButton"><span>Add New</span><span>+</span></button>
+            </div>
+        </div>
+        <div class="inProgress fullWidth">
+            <div class="heading">
+                <span>In Progress</span>
+                <span class="material-symbols-outlined">
+                    sort
+                    </span>
+            </div>
+            <div class="inProgressList">
+            </div>
+        </div>
+        <div class="underReview fullWidth" >
+            <div class="heading">
+                <span>Under Review</span>
+                <span class="material-symbols-outlined">
+                    sort
+                    </span >
+            </div>
+            <div class="underReviewList">
+            </div>
+        </div>
+        <div class="finished fullWidth">
+            <div class="heading">
+                <span>Finished</span>
+                <span class="material-symbols-outlined">
+                    sort
+                    </span>
+            </div>
+            <div class="finishedList">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
