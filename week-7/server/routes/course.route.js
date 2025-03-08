@@ -1,8 +1,5 @@
-const userAuthMiddleware = require('../middlewares/userAuth.middleware.js')
 const {Router} = require('express')
-const {User} = require('../db.js')
 const {Course} = require('../db.js')
-const {Purchase} = require('../db.js')
 const router = Router();
 router.get('/preview/:courseId',async (req,res) => {
     try {
