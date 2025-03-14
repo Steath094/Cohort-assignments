@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = ({toggleView,formView}) => {
 
-  console.log(formView);
+  // console.log(formView);
   
   return (
     <div style={{display:'flex',justifyContent:'center',alignItems:'center',gap:'12px',padding: 20,backgroundColor:'#B17F59',opacity:'0.7',color:'#193b24'}}>

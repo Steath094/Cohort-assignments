@@ -11,9 +11,7 @@ const App = () => {
   // function handleChange(newValue) {
   //   setData(prev=>[...prev,newValue]);
   // }
-  useEffect(()=>{
-    console.log(data);
-  },[data])
+  
 
   return (
     <div
