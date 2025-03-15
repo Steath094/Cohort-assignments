@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import style from "./Timer.module.css"
-import { formatTime, calculateTime } from '../utils/auxiliaryFunctions';
+import style from "../src/components/Timer.module.css"
+import { formatTime, calculateTime } from '../src/utils/auxiliaryFunctions';
 
 const Timer = () => {
   // States to manage time, initial time, running status, and editing fields with values
