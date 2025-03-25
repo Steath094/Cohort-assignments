@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Vinyl&display=swap');
+
+.cart{
+    background: #f3f4f6;
+    min-height: 100vh;
+    display: flex;
+}
+.noStyleButton {
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+.cardHeading{
+    font-size: 2rem;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.cartLeft{
+    margin: 30px;
+    width: 70%;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.cartItemList{
+    display: flex;
+    flex-direction: column;
+}
+
+.cartItem{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 10% 77% 10%;
+    gap: 20px;
+    border-bottom: 1px solid rgb(214, 214, 214);;
+}
+.cartItemImage{
+    width: 100px;
+    height: 100px;
+}
+.cartItemImage>img{
+    width: 100%;
+    height: 100%;
+}
+.cartItemHeading{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.cartItemDetail{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.cartItemDetail>:nth-child(2){
+    color: #009415;
+    font-family:  sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.cartItemDetailOPtions{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.cartItemDetailOPtionsButton{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.cartItemDetailOPtionsButton:hover{
+    border-radius: 4px;
+    border: 2px solid blue;
+}
+.price{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+
+.cartRight{
+    background: white;
+    width: 24%;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 30px;
+    max-height: fit-content;
+    
+}
+.summaryHeading{
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.orderDetails{
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.itemCount{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid rgb(214, 214, 214);
+    padding-bottom: 10px;
+
+
+}
+.itemTotal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+.checkoutButton{
+    font-size: 1rem;
+    font-weight: bold;
+    height: 50px;
+    padding: 8px 20px;
+    background: #fabe25;
+    border: none;
+    border-radius: 32px;
+}
+
+.deleteButton{
+    color: blue;
+    cursor: pointer;
+}
+.deleteButton:hover{
+    border: none;
+}
+
+/* checkout  */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 350px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  .checkmark {
+    display: block;
+    font-size: 40px;
+    color: green;
+    margin: 10px auto;
+  }
+  
+  .total-amount {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  .close-btn {
+    background: blue;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    background: darkblue;
+  }
+  

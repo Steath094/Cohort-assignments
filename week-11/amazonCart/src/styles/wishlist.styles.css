@@ -1,0 +1,142 @@
+.noStyleButton {
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+.wishlistMain{
+    display: flex;
+    min-height: 100vh;
+}
+
+.wishlistLeft{
+    width: 15%;
+    padding: 20px;
+    border-right: 1px solid rgb(214, 214, 214);
+    
+}
+.wishlistRight{
+    width: 85%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.leftSideBarContent{
+    padding: 8px;
+    background: #f2f3f5;
+    border-radius: 8px;
+}
+.heading{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.wishlistRightHead{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.wishlistRightHeading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wishlistRightHeadingRight{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.shareButton{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font: bold;
+    gap: 2px;
+}
+.wishlistRightHeadButtons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.headButtonLeft{
+    display: flex;
+    gap: 20px;
+
+}
+.headButtonRight{
+    display: flex;
+    gap: 10px;
+    height: 30px;
+}
+.wishlistContentGrid{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.gridItem{
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 4px;
+    padding: 10px;
+}
+.gridItemDetail{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.searchWishlist{
+    font-size: 16px;
+    background-color: white;
+  background-image: url('../assets/search.png');
+  background-size: 30px;
+    background-position: 9px 0px;
+  background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+.itemPrice{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.gridItemButton{
+    width: 80%;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 8px;
+    background: #fabe25;
+    border: none;
+}
+.nonGrid{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.nonGridItemButton{
+    font-size: 1rem;
+    font-weight: bold;
+    height: 50px;
+    padding: 8px 20px;
+    background: #fabe25;
+    border: none;
+    border-radius: 32px;
+}
+.nonGridItem{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 65% 8% 12%;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.nonGridItemImage{
+    width: 100px;
+    height: 100px;
+}
+.nonGridItemImage>img{
+    width: 100%;
+    height: 100%;
+}
